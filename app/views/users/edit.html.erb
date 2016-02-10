@@ -1,0 +1,11 @@
+<h1>登録情報の編集</h1>
+<%= form_for(@user) do |f| %>
+  名前:
+  <%= f.text_field :name %>
+  メールアドレス:
+  <%= f.text_field :email %>
+  現在地：
+  <%= f.text_field :location %>  
+  <br/>
+  <%= f.submit class: "btn btn-sm btn-primary" %>
+<% end %>
